@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C1000000"
+    tools:context=".Iconos">
+
+    <Button
+        android:id="@+id/btnBuscador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="Buscador"
+        app:backgroundTint="#2196F3"
+        app:icon="@drawable/behance"
+        app:iconTintMode="multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="Facebook"
+        app:backgroundTint="#3F51B5"
+        app:icon="@drawable/facebook"
+        app:iconTintMode="multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuscador" />
+
+    <Button
+        android:id="@+id/btnGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="Google"
+        app:backgroundTint="#FF5722"
+        app:icon="@drawable/google_plus"
+        app:iconTintMode="multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFacebook" />
+
+    <Button
+        android:id="@+id/btnPinterest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="Pinterest"
+        app:backgroundTint="#E91E63"
+        app:icon="@drawable/pinterest"
+        app:iconTintMode="multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoogle" />
+
+    <ImageButton
+        android:id="@+id/ibCorreo"
+        android:layout_width="191dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="Correo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/correo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

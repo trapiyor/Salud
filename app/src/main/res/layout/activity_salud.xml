@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Salud">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtAltura"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAltura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Altura" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtPeso"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPeso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Peso" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:id="@+id/rbMujer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foregroundGravity="center"
+                android:text="Mujer"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/rbHombre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hombre"
+                android:textAlignment="center" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="44dp"
+        android:text="Calcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="125dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:text="Limpiar"
+        app:layout_constraintStart_toEndOf="@+id/btnCalcular"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
